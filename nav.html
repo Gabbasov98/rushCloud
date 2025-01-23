@@ -7,10 +7,12 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="color-scheme" content="light only">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
     <title>Главная</title>
 </head>
+
 
 
 <style>
@@ -32,26 +34,26 @@
         <a href="index.html" style="display: block; margin-bottom: 20px;">
             Главная
         </a>
+        <a href="products.html" style="display: block; margin-bottom: 20px;">
+            Продукты
+        </a>
+        <a href="product.html" style="display: block; margin-bottom: 20px;">
+            Продукт
+        </a>
+        <a href="tariffs.html" style="display: block; margin-bottom: 20px;">
+            Тарифы
+        </a>
+        <a href="services.html" style="display: block; margin-bottom: 20px;">
+            Сервисы
+        </a>
+        <a href="service.html" style="display: block; margin-bottom: 20px;">
+            Сервис
+        </a>
+        <a href="support.html" style="display: block; margin-bottom: 20px;">
+            Поддержка
+        </a>
 
 
-
-
-        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">
-            Быстрый заказ
-        </button>
-
-
-        <code>
-
-            @@include
-            ('components/page-blocks/_filter-slider.html',{ <br>
-            "start1":"0", <br>
-            "start2":"30000", <br>
-            "min":"1000", <br>
-            "max":"100000", <br>
-            })
-
-        </code>
     </div>
 
 
@@ -75,7 +77,17 @@
     </div>
 
     <!--  -->
+    <div class="cookie-modal _active" id="confModal">
+        <div class="cookie-modal__desc body-s semi-bold-text">
+            Пользуясь нашим сайтом, вы соглашаетесь с тем, что мы используем cookies 
+        </div>
+        <button class="cookie-modal__btn _cookie-close m-btn m-btn-medium m-btn-blue">
+            <span>Понятно</span>
+        </button>
+    </div>
+
     <script src="js/jquery.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 
 </body>
