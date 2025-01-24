@@ -56,8 +56,16 @@
         <a href="support.html" style="display: block; margin-bottom: 20px;">
             Поддержка
         </a>
+        <a href="support.html" style="display: block; margin-bottom: 20px;">
+            Политика данных
+        </a>
 
-
+        <button data-modal="callModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Закажите звонок
+        </button>
+        <button data-modal="thankModal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Спасибо за заявку
+        </button>
     </div>
 
 
@@ -66,20 +74,61 @@
 
 
 
-    <div class="modal" id="Modal">
+    <div class="modal call-modal" id="callModal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
-            <div class="modal__top">
-                <div class="text32 medium-text">
-                    Title
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal__top _gap12 _gap4-mob">
+                <div class="h5">
+                    Закажите звонок
                 </div>
-                <button class="close-btn _close-modal">
-                    <img src="img/close.svg" alt="">
+                <div class="body-s gray-text">
+                    Ответим на ваши вопросы в короткие сроки
+                </div>
+            </div>
+            <form action="" class="modal-form _mt32 _mt24-tablet">
+                <div class="modal-form__fields _gap12 _gap8-tablet">
+                    <div class="fg">
+                        <input type="text" placeholder="Имя">
+                        <div class="fg__error-text body-xs">Введите имя</div>
+                    </div>
+                    <div class="fg">
+                        <input type="tel" placeholder="Телефон">
+                        <div class="fg__error-text body-xs">Введите номер телефон</div>
+                    </div>
+                </div>
+                <div class="modal-form__nav _mt32 _mt24-tablet _flex">
+                    <button class="modal-form__btn m-btn m-btn-medium m-btn-blue">
+                        <span>Оставить заявку</span>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal call-modal" id="thankModal">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <img src="img/close.svg" alt="">
+            </button>
+            <div class="modal__top _gap12 _gap4-mob">
+                <div class="h5">
+                    Спасибо за заявку
+                </div>
+                <div class="body-s gray-text">
+                    Свяжемся с вами в ближайшее время
+                </div>
+            </div>
+            <div class="modal-form__nav _mt32 _mt24-tablet _flex">
+                <button class="_close-modal modal-form__btn m-btn m-btn-medium m-btn-blue">
+                    <span>Окей</span>
                 </button>
             </div>
         </div>
     </div>
-
     <!--  -->
     <div class="cookie-modal _active" id="confModal">
         <div class="cookie-modal__desc body-s semi-bold-text">
@@ -91,6 +140,7 @@
     </div>
 
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.min.js"></script>
 
